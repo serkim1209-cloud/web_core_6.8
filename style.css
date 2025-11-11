@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'TTLakes-Bold';
+    src: url('./fonts/TTLakes-Bold.ttf') format(TrueTape Font);
+
+}
+@font-face {
+    font-family: 'TTLakes-MEdium';
+    src: url('./fonts/TTLakes-Medium.ttf') format(TrueTape Font);
+}
+@font-face {
+    font-family: 'TTLakes-Regular';
+    src: url('./fonts/TTLakes-Regular.ttf') format(TrueTape Font);
+}
+.h1 {
+    font-family: 'TTLakes-Bold';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}

@@ -1,20 +1,77 @@
 @font-face {
     font-family: 'TTLakes-Bold';
     src: url('./fonts/TTLakes-Bold.ttf') format(TrueTape Font);
+    font-weight: 700;
+    font-style: normal;
 
 }
 @font-face {
     font-family: 'TTLakes-MEdium';
     src: url('./fonts/TTLakes-Medium.ttf') format(TrueTape Font);
+    font-weight: 500;
+    font-style: normal;
 }
 @font-face {
     font-family: 'TTLakes-Regular';
     src: url('./fonts/TTLakes-Regular.ttf') format(TrueTape Font);
+    font-weight: 400;
+    font-style: normal;
 }
+/*Тексь заголовка*/
 .h1 {
     font-family: 'TTLakes-Bold';
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
+    
+}
+/*Навигационое меню*/
+.menu {
+    font-family: 'TTLakes-MEdium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+}
+/*Основной текст*/
+.main--tytle {
+    font-family: 'TTLakes-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+body {
+    box-sizing: border-box;
+    border: 2px solid black
+}
+.h1 {
+    border: 2px solid black
+}
+nav {
+    display: inline-flex;
+     border: 2px solid black
+}
+.menu {
+     display: inline-flex;
+     border: 2px solid black
+}
+.main-content {
+     display: inline-flex;
+     border: 2px solid black
+}
+.main--tytle {
+     border: 2px solid black
+}
+.main--img {
+     border: 2px solid black
+}
+.footer {
+     display: inline-flex;
+    border: 2px solid black
+}
+.divider {
+    border: 2px solid black
 }

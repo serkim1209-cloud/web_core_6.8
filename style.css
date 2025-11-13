@@ -43,19 +43,19 @@ body {
     width: 100%;
     height: auto;
     background-color: #FFFFFF;
-    /*
     white-space: nowrap;
     overflow: hidden;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
-*/
+
 }
 .navigation--profile{
 display: flex;
 align-items: center;
 white-space: nowrap;
 overflow: hidden;
+flex-direction: row-reverse;
 font-family: 'TTLakes';
 font-weight: 500;
 font-style: normal;
@@ -68,6 +68,7 @@ margin: 7px;
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
+    flex-direction: row-reverse;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;

@@ -32,16 +32,45 @@ body {
     justify-content:space-around;
     width: 100%;
     height: auto;
+    background-color: #F8F8F8;
 }
 /*Навигационое меню*/
 
 .nav {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: auto;
+    background-color: #FFFFFF;
+    /*
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-style: normal;
+*/
+}
+.navigation--profile{
+display: flex;
+align-items: center;
+white-space: nowrap;
+overflow: hidden;
+font-family: 'TTLakes';
+font-weight: 500;
+font-style: normal;
 
+}
 
+.navigation--repair{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-style: normal;
+   
 }
 .navigation--img {
     display: flex;
@@ -129,6 +158,7 @@ img {
     display: flex;
     width: 100%;
     height: auto;
+    margin-top: 10px;
   
     
 
@@ -136,10 +166,14 @@ img {
 /*Чекбокс далее стрелки*/
 
 .check-box-icon {
-
     width: 10px;
     height: 10px;
     margin-left: 50px;
+  
 }
-
+i {
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-style: normal;
+}
 

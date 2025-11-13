@@ -7,21 +7,21 @@
     
 }
 @font-face {
-    font-family: 'TTLakes-Bold';
-    src: url('./fonts/TTLakes-Bold.ttf') format(TrueTape Font);
+    font-family: 'TTLakes';
+    src: url('./fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'TTLakes-MEdium';
-    src: url('./fonts/TTLakes-Medium.ttf') format(TrueTape Font);
+    font-family: 'TTLakes';
+    src: url('./fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
-    font-family: 'TTLakes-Regular';
-    src: url('./fonts/TTLakes-Regular.ttf') format(TrueTape Font);
+    font-family: 'TTLakes';
+    src: url('./fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -31,7 +31,6 @@ body {
     justify-content:space-around;
     width: 100%;
     height: auto;
-    border: 2px solid brown
 }
 /*Навигационое меню*/
 
@@ -40,20 +39,33 @@ body {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    border: 2px solid blue;
 
+
+}
+.navigation--img {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+  
 }
 /*Заголовок*/
 
 .h1 {
     
-    border: 2px solid black;
     width: 100%;
     height: auto;
     border-left-width: 7px;
     border-left-color: aqua;
    
 
+}
+
+h1 {
+    font-family: 'TTLakes';
+    font-weight: 700;
+    font-style:normal;
+    border-left: 10px solid #41F6D7;
 }
 /*Перегородка в навигации*/
 
@@ -70,11 +82,15 @@ img {
     height: 40px
 }
 .menu--title {
-    border: 2px solid black;
     margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #B8FFEC;
     white-space: nowrap;
     overflow: hidden;
-    
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-style: normal;
 }
 
 .menu {
@@ -83,7 +99,7 @@ img {
     overflow: hidden;
     width: 100%;
     height: auto;
-    border: 2px solid black;
+
     
 }
 
@@ -92,15 +108,17 @@ img {
     flex-direction: column;
     width: 100%;
     height: auto;
-    border: 2px solid black;
+
 }
 /*Основной текст*/
 
 .main--title {
     max-width: 100%;
     display: flex;
-    border: 2px solid black;
-    padding: 10px;
+    padding: 20px;
+    font-family: 'TTLakes';
+    font-weight: 400;
+    font-style:normal;
    
 }
 
@@ -110,27 +128,17 @@ img {
     display: flex;
     width: 100%;
     height: auto;
-    border: 2px solid black;
-    padding: 10px;
+  
+    
 
 }
 /*Чекбокс далее стрелки*/
 
 .check-box-icon {
-    border: 1px solid black;
-    width: 15px;
-    height: 15px;
-}
-.footer {
-    width: 132px;
-    height: 24px;
-    margin-left: 16px;
-    border: 2px solid black;
-}
-.footer--icon {
-    width: 15px;
-    height: 15px;
 
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
 }
 
 

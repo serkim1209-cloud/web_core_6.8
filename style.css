@@ -59,6 +59,7 @@ overflow: hidden;
 font-family: 'TTLakes';
 font-weight: 500;
 font-style: normal;
+margin: 7px;
 
 }
 
@@ -70,13 +71,14 @@ font-style: normal;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
-   
+    margin: 7px;
 }
 .navigation--img {
     display: flex;
     justify-content: center;
     width: 70px;
     height: 40px;
+
   
 }
 /*Заголовок*/

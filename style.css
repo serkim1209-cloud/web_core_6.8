@@ -118,7 +118,6 @@ img {
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-    border: 2px solid #B8FFEC;
     white-space: nowrap;
     overflow: hidden;
     font-family: 'TTLakes';
@@ -161,6 +160,7 @@ img {
 
 .main--title {
     max-width: 100%;
+    height: auto;
     display: flex;
     padding: 20px;
     font-family: 'TTLakes';
@@ -176,9 +176,6 @@ img {
     width: 100%;
     height: auto;
     margin-top: 10px;
-  
-    
-
 }
 /*Чекбокс далее стрелки*/
 
@@ -194,3 +191,28 @@ i {
     font-style: normal;
 }
 
+@media (min-width: 930px) {
+    .main-content {
+        flex-direction: row; 
+        position: relative;
+}
+ .main--img {
+    
+  width: auto;
+
+}
+.main--title{
+  width: auto;
+  display: flex;
+  align-items:start;
+ 
+}
+ .check-box{
+    position: absolute;
+    white-space: nowrap;
+    width: auto;
+    height: 25px;
+    top: 250px;
+
+ }
+}

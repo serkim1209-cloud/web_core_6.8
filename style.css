@@ -125,7 +125,21 @@ img {
     font-weight: 500;
     font-style: normal;
 }
-
+.menu--title--1{
+    display: flex;
+    justify-content: center;
+    min-width: 246px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #B8FFEC;
+    white-space: nowrap;
+    align-items: center;
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
 .menu {
     display: flex;
     flex-direction: row;

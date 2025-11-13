@@ -1,1 +1,1 @@
-https://github.com/serkim1209-cloud/web_core_6.8/
+https://serkim1209-cloud.github.io/web_core_6.8/

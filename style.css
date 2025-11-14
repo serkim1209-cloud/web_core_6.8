@@ -44,7 +44,6 @@ body {
     height: auto;
     background-color: #FFFFFF;
     white-space: nowrap;
-    overflow: hidden;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
@@ -54,7 +53,6 @@ body {
 display: flex;
 align-items: center;
 white-space: nowrap;
-overflow: hidden;
 flex-direction: row-reverse;
 font-family: 'TTLakes';
 font-weight: 500;
@@ -67,13 +65,14 @@ margin: 7px;
     display: flex;
     align-items: center;
     white-space: nowrap;
-    overflow: hidden;
     flex-direction: row-reverse;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
     margin: 7px;
 }
+/*Картинка в навигации*/
+
 .navigation--img {
     display: flex;
     justify-content: center;
@@ -82,7 +81,7 @@ margin: 7px;
 
   
 }
-/*Заголовок*/
+/*Блок заголовка*/
 
 .h1 {
     
@@ -93,14 +92,14 @@ margin: 7px;
    
 
 }
-
+/*Текст заголовка*/
 h1 {
     font-family: 'TTLakes';
     font-weight: 700;
     font-style:normal;
     border-left: 10px solid #41F6D7;
 }
-/*Перегородка в навигации*/
+/*Перегородка в навигации между иконками*/
 
 .divider {
     width: 2px;
@@ -109,11 +108,21 @@ h1 {
     border: 2px solid #EAEAEA;
 }
 
+.divider-2 {
+    width: 2px;
+    height: 32px;
+    border-radius: 25px;
+    border: 2px solid #EAEAEA;
+}
+/*Размеры иконок*/
 
 img {
     width: 40px;
     height: 40px
 }
+
+/*Весь текст в меню*/
+
 .menu--title {
     margin: 5px;
     padding: 5px;
@@ -124,6 +133,8 @@ img {
     font-weight: 500;
     font-style: normal;
 }
+/*Текст 1 в блоке меню */
+
 .menu--title--1{
     display: flex;
     justify-content: center;
@@ -139,6 +150,7 @@ img {
     font-style: normal;
     background-color: #FFFFFF;
 }
+/*Основной блок меню*/
 .menu {
     display: flex;
     flex-direction: row;
@@ -148,6 +160,8 @@ img {
 
     
 }
+
+/*Основной блок с текстом икартинкой*/
 
 .main-content {
     display: flex;
@@ -185,13 +199,15 @@ img {
     margin-left: 50px;
   
 }
+/*Текст от чек бокса*/
 i {
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
 }
+/*Блок с одоптацией дисплеев*/
 
-@media (min-width: 930px) {
+@media (min-width: 910px) {
     .main-content {
         flex-direction: row; 
         position: relative;
@@ -205,6 +221,7 @@ i {
   width: auto;
   display: flex;
   align-items:start;
+  overflow: hidden;
  
 }
  .check-box{
@@ -215,4 +232,38 @@ i {
     top: 250px;
 
  }
+}
+@media (max-width: 700px) {
+    .navigation--calln, .navigation--chat, .navigation--status {
+        display: none;
+    }
+    .navigation--profile--text, .navigation--repair--text {
+        display: none;
+    }
+
+    .navigation--profile {
+        position: relative;
+        left: 45px;
+    }
+       .navigation--repair {
+        position: relative;
+        left: 20px
+
+       }
+       .divider {
+        position: relative;
+        left: 80px;
+       }
+.navigation--img {
+    position: relative;
+    left: 37px;
+    width: 90px;
+    height: 55px;
+}
+.divider-2{
+    display: none;
+}    
+.menu--title{
+    min-width: 246px;
+}
 }

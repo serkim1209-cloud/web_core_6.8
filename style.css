@@ -243,20 +243,20 @@ i {
 
     .navigation--profile {
         position: relative;
-        left: 45px;
+        left: 20px;
     }
        .navigation--repair {
         position: relative;
-        left: 20px
+        left: 7px
 
        }
        .divider {
         position: relative;
-        left: 80px;
+        left: 60px;
        }
 .navigation--img {
     position: relative;
-    left: 37px;
+    left: 30px;
     width: 90px;
     height: 55px;
 }

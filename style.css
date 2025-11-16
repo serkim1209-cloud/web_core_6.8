@@ -108,6 +108,9 @@ h1 {
     font-style:normal;
    
 }
+ .h1 .navigation--profile, .h1 .navigation--repair {
+        display: none;
+    }g
 /*Перегородка в навигации между иконками*/
 
 .divider {

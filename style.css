@@ -48,6 +48,7 @@ body {
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
+    
 
 }
 .navigation--profile--text, .navigation--repair--text {
@@ -128,17 +129,23 @@ img {
     width: 40px;
     height: 40px
 }
+/*Надпись отзывы*/
+.commit{
+    display: none;
+
+}
 
 /*Весь текст в меню*/
 
 .menu--title {
     display: flex;
-   gap: 5px;
+    gap: 5px;
     border-radius: 10px;
     white-space: nowrap;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
+    color: #7E7E82;
 }
 /*Текст 1 в блоке меню */
 
@@ -156,6 +163,7 @@ img {
     font-weight: 500;
     font-style: normal;
     background-color: #FFFFFF;
+    color: #7E7E82;
 }
 /*Основной блок меню*/
 .menu {
@@ -195,7 +203,8 @@ img {
 .main--img {
     width: 100%;
     height: auto;
-    margin-top: 10px;
+    margin-left: 10px;
+
 }
 /*Чекбокс далее стрелки*/
 
@@ -206,7 +215,8 @@ img {
   
 }
 /*Текст от чек бокса*/
-i {
+
+.check-box-icon-text {
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
@@ -223,12 +233,16 @@ i {
         width: 100%;
         height: auto;
     }
-      
+    .h1 .navigation--profile, .h1 .navigation--repair {
+        display: none;
+    }  
+
    .navigation--calln {
     margin-left: 400px;
    }
    .main-content {
     position: relative;
+    display: flex;
     flex-direction: row;
    }
    .main--title{
@@ -257,15 +271,72 @@ i {
 
 /*РАЗМЕР ДЛЯ ЭКРАНА ДЛЯ ТЕЛЕФОНА*/
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .navigation--calln, .navigation--chat, .navigation--status {
         display: none;
     }
-    .navigation--profile--text, .navigation--repair--text, .divider-2 {
+    .navigation--profile--text, .navigation--repair--text, .divider {
         display: none;
     }
     .main--title{
     height: 110px;
     overflow: hidden;
    }
+       .h1 .navigation--profile, .h1 .navigation--repair {
+        display: none;
+    }  
+    .check-box {
+        position:relative;
+        right: 50px;
+        margin: 15px;
+
+    }
+    .main--img{
+        margin-left: 0px;
+    }
 }
+/*Размер для веб*/
+@media (min-width: 1120px) {
+    .nav {
+        display: none;
+    }
+    
+    .h1 {
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+      .navigation--profile--text, .navigation--repair--text{
+        display: block;
+        font-family: 'TTLakes';
+        font-weight: 500;
+        font-style: normal;
+        padding: 10px;
+
+      }
+      .navigation--profile--text{
+        margin-left: auto;
+      }
+      .h1 .navigation--profile, .h1 .navigation--repair{
+        display: block;
+      }
+      .commit {
+        display:block;
+        font-family: 'TTLakes';
+        font-weight: 500;
+        font-style: normal;
+        color: #7E7E82;
+        position:relative;
+        bottom: 20px;
+        left: 30px;
+
+      }
+
+
+    }
+        
+    
+
+
+   
+   

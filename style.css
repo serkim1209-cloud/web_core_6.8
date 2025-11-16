@@ -33,6 +33,7 @@ body {
     width: 100%;
     height: auto;
     background-color: #F8F8F8;
+    padding: 0px 20px 0px 20px;
 }
 /*Навигационое меню*/
 
@@ -49,6 +50,9 @@ body {
     font-style: normal;
 
 }
+.navigation--profile--text, .navigation--repair--text {
+    display: none;
+}
 .navigation--profile{
 display: flex;
 align-items: center;
@@ -57,7 +61,7 @@ flex-direction: row-reverse;
 font-family: 'TTLakes';
 font-weight: 500;
 font-style: normal;
-margin: 7px;
+
 
 }
 
@@ -69,7 +73,7 @@ margin: 7px;
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
-    margin: 7px;
+   
 }
 /*Картинка в навигации*/
 
@@ -87,7 +91,7 @@ margin: 7px;
     width: 4px;
     height: 40px;
     position: relative;
-    right: 30px;
+
 }
 
 .h1 {
@@ -128,9 +132,8 @@ img {
 /*Весь текст в меню*/
 
 .menu--title {
-   
-    margin: 5px;
-    padding: 5px;
+    display: flex;
+   gap: 5px;
     border-radius: 10px;
     white-space: nowrap;
     font-family: 'TTLakes';
@@ -157,6 +160,8 @@ img {
 /*Основной блок меню*/
 .menu {
     display: flex;
+    align-items: center;
+    gap: 20px;
     flex-direction: row;
     overflow: hidden;
     width: 100%;
@@ -179,8 +184,6 @@ img {
 .main--title {
     max-width: 100%;
     height: auto;
-    display: flex;
-    padding: 20px;
     font-family: 'TTLakes';
     font-weight: 400;
     font-style:normal;
@@ -190,7 +193,6 @@ img {
 /*Основная картинка*/
 
 .main--img {
-    display: flex;
     width: 100%;
     height: auto;
     margin-top: 10px;
@@ -213,191 +215,57 @@ i {
 
 /*Экран для планшетав*/
 
+
 @media (min-width: 769px) {
     body {
-        padding: 0px 20px 0px 20px;
+        
         display: flex;
         width: 100%;
         height: auto;
     }
-    .left--border--icons{
-        position: relative;
-        right: 0;
-    }
-    .navigation--profile--text, .navigation--repair--text {
-        display: none;
-        
-    }
-    .navigation--burger{
-        position: relative;
-        right: 30px;
-    }
-.navigation--repair {
+      
+   .navigation--calln {
+    margin-left: 400px;
+   }
+   .main-content {
     position: relative;
-    left: 25px;
-}
-.navigation--profile {
-    position: relative;
-    left: 50px;
-}
-.divider-2 {
-    position: relative;
-    left: 120px;
-}
-.navigation--status {
-    position: relative;
-    left: 125px;
-}
-.navigation--chat {
-    position: relative;
-    left: 145px;
-}
-.navigation--calln {
-    position: relative;
-    left: 165px;
-}
-.divider {
-    position: relative;
-    right: 140px;
-}
-.menu--title{
-    display: flex;
-    align-items: center;
-    width: 248px;
-    height: 40px;
-}
-.menu--title--1 {
-    width: 248px;
-    height: 40px;
-}
-.main-content {
-    display: flex;
     flex-direction: row;
-}
-.main--title {
-
-    flex-basis: 65%;
-    position: relative;
-    flex-direction: column;
-    line-height: 20px;
-    width: 50%;
-    height: 180px;
-    padding: 0;
+   }
+   .main--title{
+    max-width: 50%;
+    height: 200px;
     overflow: hidden;
-}
-.main--img {
-    flex-basis: 70%;
-}    
-
-.check-box{
-    justify-content: flex-start;
-    white-space: nowrap;
-    align-items: center;
-    position: relative;
-    right: 230px;
-    top: 180px;
+   }
+   .check-box {
+    position: absolute;
     width: 150px;
-    height: 40px;
-}
-.check-box-icon {
-    position: relative;
-    right: 10px;
-    top: 
+    height: 30px;
+    white-space: nowrap;
+    top: 230px;
+   }
+   .main--img {
+    max-width: 50%;
+   }
+   .left--border--icons{
+    position: absolute;
+    left: 0;
+    
+    
+   }
 }
 
-}
+
 /*РАЗМЕР ДЛЯ ЭКРАНА ДЛЯ ТЕЛЕФОНА*/
 
-@media (max-width: 769px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .navigation--calln, .navigation--chat, .navigation--status {
         display: none;
     }
-    .navigation--profile--text, .navigation--repair--text {
+    .navigation--profile--text, .navigation--repair--text, .divider-2 {
         display: none;
     }
-    
-    .navigation--burger{
-        position: relative;
-        left: 5px;
-    }
-
-    .navigation--profile {
-        position: relative;
-        left: 15px;
-    }
-       .navigation--repair {
-        position: relative;
-        left: 3px;
-
-       }
-       .divider {
-        position: relative;
-        left: 30px;
-       }
-.navigation--img {
-    position: relative;
-    left: 7px;
-    width: 96.55px;
-    height: 50.81px;
-}
-.divider-2{
-    display: none;
-} 
-
-.nav {
-    min-width: 320px;
-    min-height: 88px;
-    position: relative;
-    
-}
-.main--title {
-    padding: 0;
-    justify-content: center;
-    min-width: 288px;
-    min-height: 93px;
-    font-size: 14px;
-    letter-spacing: 0.2px;
+    .main--title{
+    height: 110px;
     overflow: hidden;
-    position: relative;
-    bottom: 40px;
-
-}  
-
-.menu--title {
-    width: 246px;   
-    
-}
-body {
-    padding: 20px;
-    min-width: 320px;
-    min-height: 600px;
-}
-.left--border--icons{
-        position: relative;
-        right: 0;
-    }
-.h1 {
-    position: relative;
-    bottom: 20px;
-
-}
-.menu{
-    position: relative;
-    bottom: 35px;
-    
-}
-.check-box {
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
-    align-items: center;
-    position: relative;
-    bottom: 17px;
-    width: 150px;
-    height: 40px;
-}
-.check-box-icon{
-    position: relative;
-    right: 10px;
-}
+   }
 }

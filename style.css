@@ -89,7 +89,6 @@ body {
     align-items: center;
     margin: 0;
 
-
 }
 /*Текст заголовка*/
 h1 {
@@ -99,7 +98,11 @@ h1 {
     margin-left: 0;
    
 }
- 
+ .menu--title{
+    border: none;
+    background-color: #F8F8F8;
+ }
+
 /*Перегородка в навигации между иконками*/
 
 .divider {

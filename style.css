@@ -5,7 +5,7 @@
     max-width: 1200px;
     margin: 0;
     padding: 0; 
-    margin: 0 auto
+  
 
 }
 
@@ -88,6 +88,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+
 
 }
 /*Текст заголовка*/
@@ -225,7 +226,7 @@ img {
 /*Экран для планшета*/
 
 
-@media (min-width: 769px) {
+@media (min-width:784px){
     body {
         
         display: flex;
@@ -282,10 +283,13 @@ img {
 
 /*РАЗМЕР ДЛЯ ЭКРАНА ДЛЯ ТЕЛЕФОНА*/
 
-@media (max-width: 768px) {
+@media (max-width: 784px){
     
+       .right--title{
+        display: none;
+    }
     .center {
-        display:none
+        display:none;
     }
 
     .main--title{
@@ -306,7 +310,10 @@ img {
     }
 }
 /*Размер для веб*/
-@media (min-width: 1120px) {
+@media (min-width:1120px){
+    html{
+        margin: 0 auto;
+    }
     .nav {
         display: none;
     }
@@ -343,8 +350,6 @@ img {
       .main-content{
         padding: 0;
       }
-
-
-    }
+}
         
     

@@ -4,7 +4,9 @@
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0;
-    padding: 0;   
+    padding: 0; 
+    margin: 0 auto
+
 }
 
 @font-face {
@@ -33,14 +35,14 @@ body {
     width: 100%;
     height: auto;
     background-color: #F8F8F8;
-    padding: 0px 20px 0px 20px;
+   
 }
 /*Навигационое меню*/
 
-.nav {
+.nav, .left, .center, .right {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     background-color: #FFFFFF;
@@ -48,34 +50,11 @@ body {
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
+    gap: 10px;
+
   
-
-}
-.header--profile--text, .header--repair--text {
-    display: none;
-}
-.header--profile{
-display: flex;
-align-items: center;
-white-space: nowrap;
-flex-direction: row-reverse;
-font-family: 'TTLakes';
-font-weight: 500;
-font-style: normal;
-
-
 }
 
-.header--repair{
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    flex-direction: row-reverse;
-    font-family: 'TTLakes';
-    font-weight: 500;
-    font-style: normal;
-   
-}
 /*Картинка в навигации*/
 
 .header--img {
@@ -90,16 +69,25 @@ font-style: normal;
 
 .left--border--icons {
     width: 4px;
-    height: 40px;
-    position: relative;
-
+    margin-right: 10px;
+    margin-left: 0;
 }
 
-.h1 {
+.title {
     display: flex;
+    white-space: nowrap;
     width: 100%;
     height: auto;
     margin-top: 45px;
+   
+    
+   
+}
+.right--title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 
 }
 /*Текст заголовка*/
@@ -107,11 +95,10 @@ h1 {
     font-family: 'TTLakes';
     font-weight: 700;
     font-style:normal;
+    margin-left: 0;
    
 }
- .h1 .header--profile, .h1 .header--repair {
-        display: none;
-    }g
+ 
 /*Перегородка в навигации между иконками*/
 
 .divider {
@@ -119,6 +106,7 @@ h1 {
     height: 32px;
     border-radius: 25px;
     border: 2px solid #EAEAEA;
+    display: none;
 }
 
 .divider-2 {
@@ -137,6 +125,7 @@ img {
 .commit{
     display: none;
     margin-top: 45px;
+    margin-left: 30px;
 
 }
 
@@ -158,7 +147,6 @@ img {
     display: flex;
     justify-content: center;
     min-width: 246px;
-    margin: 5px;
     padding: 5px;
     border-radius: 10px;
     border: 2px solid #B8FFEC;
@@ -173,6 +161,7 @@ img {
 /*Основной блок меню*/
 .menu {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     gap: 20px;
     flex-direction: row;
@@ -180,6 +169,7 @@ img {
     width: 100%;
     height: auto;
     margin-top: 45px;
+    padding: 10px;
     
 }
 
@@ -191,7 +181,7 @@ img {
     width: 100%;
     height: auto;
     margin-top: 45px;
-
+   
 }
 /*Основной текст*/
 
@@ -201,6 +191,7 @@ img {
     font-family: 'TTLakes';
     font-weight: 400;
     font-style:normal;
+    padding-left: 10px;
    
 }
 
@@ -217,7 +208,7 @@ img {
 .check-box-icon {
     width: 10px;
     height: 10px;
-    margin-left: 50px;
+    margin-left: 40px;
   
 }
 /*Текст от чек бокса*/
@@ -226,6 +217,8 @@ img {
     font-family: 'TTLakes';
     font-weight: 500;
     font-style: normal;
+    padding: 10px;
+
 }
 
 
@@ -239,17 +232,30 @@ img {
         width: 100%;
         height: auto;
     }
-    .h1 .header--profile, .h1 .header--repair {
+    .right--title{
         display: none;
-    }  
+    }
+    .right{
+        justify-content: flex-end;
+        gap: 10px;
+        width: 110px;
 
-   .header--calln {
-    margin-left: 400px;
+    }
+    .left{
+        justify-content: flex-start;
+    }
+    .center{
+        justify-content: flex-end; 
+        gap: 10px;
+    }
+   .divider{
+    display: block;
    }
    .main-content {
     position: relative;
     display: flex;
     flex-direction: row;
+    
    }
    .main--title{
     max-width: 50%;
@@ -269,31 +275,26 @@ img {
    .main--img {
     max-width: 50%;
    }
-   .left--border--icons{
-    position: absolute;
-    left: 0;
-    
-    
+  
    }
-}
+
 
 
 /*РАЗМЕР ДЛЯ ЭКРАНА ДЛЯ ТЕЛЕФОНА*/
 
 @media (max-width: 768px) {
-    .header--calln, .header--chat, .header--status {
-        display: none;
+    
+    .center {
+        display:none
     }
-    .header--profile--text, .header--repair--text, .divider {
-        display: none;
-    }
+
     .main--title{
     height: 90px;
     overflow: hidden;
    }
-       .h1 .header--profile, .h1 .header--repair {
+    .right--title{
         display: none;
-    }  
+    }
     .check-box {
         position:relative;
         right: 50px;
@@ -310,25 +311,25 @@ img {
         display: none;
     }
     
-    .h1 {
-        align-items: center;
-        justify-content: space-evenly;
-
-    }
-      .header--profile--text, .header--repair--text{
-        display: block;
+.right--title{
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+}
+ .title{
+    display: flex;
+    align-items: center;
+ }
+       .title--text{
         font-family: 'TTLakes';
         font-weight: 500;
         font-style: normal;
         padding: 10px;
 
       }
-      .header--profile--text{
-        margin-left: auto;
-      }
-      .h1 .header--profile, .h1 .header--repair{
-        display: block;
-      }
+
       .commit {
         display:block;
         font-family: 'TTLakes';
@@ -339,12 +340,11 @@ img {
         left: 30px;
 
       }
+      .main-content{
+        padding: 0;
+      }
 
 
     }
         
     
-
-
-   
-   
